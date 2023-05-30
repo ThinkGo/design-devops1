@@ -1,5 +1,5 @@
 Design Devops 1
-
+<pre>
 Design DevOps
 yum install git -y
 git --version
@@ -39,5 +39,5 @@ history
     ysU55p[P
 
 
-
+</pre>
 
