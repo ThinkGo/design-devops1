@@ -27,7 +27,7 @@ git status
 git remote add origin https://github.com/MAZYAFAI/devops-usa.git
 git push origin master
 give your user id 
-for password give token   Git hub token: 
+for password give token   Git hub token: (ur hithub > settings > dev settings > create token > select all > save) 
 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
 
 history
@@ -37,6 +37,7 @@ history
     user-walmart-3
     Console password
     ysU55p[P
+
 
 
 
