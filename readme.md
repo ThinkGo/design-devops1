@@ -139,16 +139,7 @@ ls
     7  cat index.html
     8  echo "we are learning port mapping concept in docker today" > index.html
     9  cat index.html
- 
-You to Everyone (May 31, 2023, 1:44 PM)
-13.233.183.53:80
- 
-Roshan Ramprasad Shetty to Everyone (May 31, 2023, 1:45 PM)
-5.154.161.231
- 
-ROUNAK KULKARNI to Everyone (May 31, 2023, 1:45 PM)
-done
- 
+
 Maz Yafai to Everyone (May 31, 2023, 1:59 PM)
 docker run -td --name server2 -P nginx
    59  docker ps
@@ -158,15 +149,8 @@ docker run -td --name server2 -P nginx
    63  docker ps
    64  docker port server3
    65  docker exec -it server3 /bin/bash
- 
-ROUNAK KULKARNI to Everyone (May 31, 2023, 2:03 PM)
-Need to drop brb
- 
-Roshan Ramprasad Shetty to Everyone (May 31, 2023, 2:08 PM)
-Done installing suggested Jenkins plugins
- 
-Nalini Manduva to Everyone (May 31, 2023, 2:09 PM)
-done
+go to browser  
+http://13.233.183.53:8080/
 
 </pre>
 
