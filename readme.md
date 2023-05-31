@@ -87,5 +87,86 @@ yum install update -y
    31  docker commit c3 c3img
    32  docker images
    33  docker run -it --name c4 c3img /bin/bash
+   
+   
+day2 continue. 
+port mapping 
+       docker ps
+   47  docker images
+   48  docker rm -f c1 c2 c3 c4 c5
+   49  docker ps
+   50  docker rmi -f ubuntu php nginx c3img newimg
+   51  docker images
+   52  docker ps
+   53  docker run -td --name server1 -p 80:80 ubuntu
+   enable aws > console > security > allow all traffic >
+   
+   54  docker ps
+   55  docker port server1
+   56  docker exec -it server1 /bin/bash
+ls
+    2  apt-get update -y
+    3  apt-get install apache2 -y
+    4  service apache2 restart
+    5  cd /var/www/html
+    6  ls
+    7  cat index.html
+    8  echo "we are learning port mapping concept in docker today" > index.html
+    9  cat index.html
+    
+    
+    
+    
+----day 2 history
+
+docker ps
+   47  docker images
+   48  docker rm -f c1 c2 c3 c4 c5
+   49  docker ps
+   50  docker rmi -f ubuntu php nginx c3img newimg
+   51  docker images
+   52  docker ps
+   53  docker run -td --name server1 -p 80:80 ubuntu
+   54  docker ps
+   55  docker port server1
+   56  docker exec -it server1 /bin/bash
+ls
+    2  apt-get update -y
+    3  apt-get install apache2 -y
+    4  service apache2 restart
+    5  cd /var/www/html
+    6  ls
+    7  cat index.html
+    8  echo "we are learning port mapping concept in docker today" > index.html
+    9  cat index.html
+ 
+You to Everyone (May 31, 2023, 1:44 PM)
+13.233.183.53:80
+ 
+Roshan Ramprasad Shetty to Everyone (May 31, 2023, 1:45 PM)
+5.154.161.231
+ 
+ROUNAK KULKARNI to Everyone (May 31, 2023, 1:45 PM)
+done
+ 
+Maz Yafai to Everyone (May 31, 2023, 1:59 PM)
+docker run -td --name server2 -P nginx
+   59  docker ps
+   60  docker port nginx
+   61  docker port server2
+   62  docker run -td --name server3 -p 8080:8080 jenkins/jenkins
+   63  docker ps
+   64  docker port server3
+   65  docker exec -it server3 /bin/bash
+ 
+ROUNAK KULKARNI to Everyone (May 31, 2023, 2:03 PM)
+Need to drop brb
+ 
+Roshan Ramprasad Shetty to Everyone (May 31, 2023, 2:08 PM)
+Done installing suggested Jenkins plugins
+ 
+Nalini Manduva to Everyone (May 31, 2023, 2:09 PM)
+done
+
 </pre>
 
