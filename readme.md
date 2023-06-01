@@ -8,13 +8,17 @@ history
     Console password
     ysU55p[P
     
-    EC2. > Instances > select kiran instance > start > 
-    i-0da672616841226b4
+    EC2. > Instances > select kiran instance state > start > 
+    click insstance > i-0da672616841226b4
     Connect to instance
     copy connect comand 
+     ssh -i "kiranKeyPair1.pem" ec2-user@ec2-13-232-8-193.ap-south-1.compute.amazonaws.com
     
     got to terminal having keyvalue pair for above
+    disconnect vpn
     hit command run on terminal
+     ssh -i "kiranKeyPair1.pem" ec2-user@ec2-13-232-8-193.ap-south-1.compute.amazonaws.com
+
 
 
 
