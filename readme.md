@@ -156,5 +156,94 @@ docker run -td --name server2 -P nginx
 go to browser  
 http://13.233.183.53:8080/
 
+
+Day3 volumes
+to create container
+to run 
+control t+q to exit container 
+![image](https://github.com/ThinkGo/design-devops1/assets/10430204/baf02b92-056c-42fe-b77b-33d33e201658)
+
+start first before enteting in
+docker start volcont1
+
+connect connect container 
+docker attach volcont1
+
+docker --version
+   75  service docker status
+   76  ls
+   77  cat Dockerfile
+   78  docker ps
+   79  docker ps -a
+   80  docker imagees
+   81  docker images
+   82  docker rm server1 server2 server3
+   83  docker ps -a
+   84  docker rmi ubuntu nginx jenkins/jenkins
+   85  docker ps -a
+   86  docker ps -a
+   87  ls
+   88  rm -rf Dockerfile
+vi Dockerfile
+FROM ubuntu
+RUN echo "hello we are learning docker today" >/tmp/testfile
+
+   89  ls
+   90  rmdir new1 walmart-demo/
+   91  rmdir -rf new1 walmart-demo/
+   92  rmdir -f new1 walmart-demo/
+   93  ls
+   94  docker ps -a
+   95  vi Dockerfile
+FROM ubuntu
+VOLUME "myvol"
+   96  docker build -t volc1 .
+   97  docker images
+start newly created Contaienr volC1
+   98  docker run -it --name volcont1 volc1 /bin/bash
+   go to myvol dir 
+   cd myvol/
+   
+   99  docker ps
+  100  docker run -it --name volcont2 --privileged=true --volumes-from volcont1 ubuntu /bin/bash
+  101  docker attach volcont1
+  102  docker attach volcont2
+  103  docker start volcont2
+  104  docker attach volcont2
+  
+ 108  cd /home/ec2-user
+  109  pwd
+  110  ls
+  111  docker run -it --name volcont3 -v /home/ec2-user:/mazvol --privileged=true ubuntu /bin/bash
+  112*
+  113  cat l1  
+
+#H1 store images images to docker registry 
+ls
+  116  docker ps
+  117  docker run -it --name c7 php /bin/bash
+  118  docker commit c7 c7img
+  119  docker images
+  120  docker login
+  121  docker images
+  122  docker tag c7img mazyafai/c7img
+  123  docker images
+  124  docker push mazyafai/c7img
+  
+ pull that image from hub to local 
+  docker pull mazyafai/c7img 
+
+to create image from container 
+docker commit c7 c7imganyname
+
+ docker run -it --name imgfromhubc1 mazyafai/c7img    
+  
+
+to pull image from docker
+docker pull <imgName>
+
+
+
+
 </pre>
 
