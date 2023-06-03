@@ -243,7 +243,19 @@ to pull image from docker
 docker pull <imgName>
 
 
-
+day4
+https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
+sudo yum update –y
+   60  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   61  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   62  sudo yum upgrade
+   63  sudo dnf install java-11-amazon-corretto -y
+   64   sudo yum install jenkins -y
+   65  sudo systemctl enable jenkins
+   66  sudo systemctl start jenkins
+   67  sudo systemctl status jenkins
+   68  cat /var/lib/jenkins/secrets/initialAdminPassword
+   
 
 </pre>
 
